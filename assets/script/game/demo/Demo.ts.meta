@@ -1,0 +1,13 @@
+{
+  "ver": "4.0.23",
+  "importer": "typescript",
+  "imported": true,
+  "uuid": "46770dbb-ecc5-4250-99ad-b71fcaaadfda",
+  "files": [],
+  "subMetas": {},
+  "userData": {
+    "moduleId": "project:///assets/script/game/gui/Demo.js",
+    "importerSettings": 4,
+    "simulateGlobals": []
+  }
+}
