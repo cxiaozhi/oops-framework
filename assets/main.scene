@@ -265,7 +265,7 @@
     "_priority": 1073741824,
     "_fov": 45,
     "_fovAxis": 0,
-    "_orthoHeight": 360,
+    "_orthoHeight": 475.3341433778858,
     "_near": 1,
     "_far": 2000,
     "_color": {
@@ -384,7 +384,7 @@
     "fileId": "1chkRDp1xCFqsnwJh1NVq1"
   },
   {
-    "__type__": "0eec0s4qrZF7onPlYBrD+y+",
+    "__type__": "e8158wcxM9KWJY2J2ZD4GlA",
     "_name": "",
     "_objFlags": 0,
     "__editorExtras__": {},
@@ -393,13 +393,7 @@
     },
     "_enabled": true,
     "__prefab": null,
-    "game": {
-      "__id__": 3
-    },
-    "gui": {
-      "__id__": 4
-    },
-    "_id": "c5PY2uoV1Fub3p/gK8ZOCH"
+    "_id": "afFMnrVuVIEbdiaedWysyt"
   },
   {
     "__type__": "cc.PrefabInfo",
