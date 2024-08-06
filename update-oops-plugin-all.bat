@@ -1,9 +1,75 @@
-start "1" cmd /k call update-oops-plugin-bundle.bat
+md extensions
+cd extensions
 
-start "2" cmd /k call update-oops-plugin-excel-to-json.bat
+IF EXIST oops-plugin-bundle (
+goto update
+) ELSE (
+goto clone
+)
 
-start "3" cmd /k call update-oops-plugin-framework.bat
+:clone
+git clone -b master https://gitee.com/dgflash/oops-plugin-bundle.git
 
-start "4" cmd /k call update-oops-plugin-framework-tools.bat
+:update
+cd oops-plugin-bundle
+git pull
 
-start "5" cmd /k call update-oops-plugin-hot-update.bat
+cd ../
+
+IF EXIST oops-plugin-excel-to-json (
+goto update
+) ELSE (
+goto clone
+)
+
+:clone
+git clone -b master https://gitee.com/dgflash/oops-plugin-excel-to-json.git
+
+:update
+cd oops-plugin-excel-to-json
+git pull
+
+cd ../
+
+IF EXIST oops-plugin-framework (
+goto update
+) ELSE (
+goto clone
+)
+
+:clone
+git clone -b master https://gitee.com/dgflash/oops-plugin-framework.git
+
+:update
+cd oops-plugin-framework
+git pull
+
+cd ../
+
+IF EXIST oops-plugin-framework-tools (
+goto update
+) ELSE (
+goto clone
+)
+
+:clone
+git clone -b master https://gitee.com/dgflash/oops-plugin-framework-tools.git
+
+:update
+cd oops-plugin-framework-tools
+git pull
+
+cd ../
+
+IF EXIST oops-plugin-hot-update (
+goto update
+) ELSE (
+goto clone
+)
+
+:clone
+git clone -b master https://gitee.com/dgflash/oops-plugin-hot-update.git
+
+:update
+cd oops-plugin-hot-update
+git pull
