@@ -1,14 +1,6 @@
-import { _decorator, Component, Node } from 'cc';
-const { ccclass, property } = _decorator;
+import {_decorator, Component, Node} from "cc";
+import {oops} from "../../extensions/oops-plugin-framework/assets/core/Oops";
+const {ccclass, property} = _decorator;
 
-@ccclass('GlobalEvent')
-export class GlobalEvent extends Component {
-    start() {
-
-    }
-
-    update(deltaTime: number) {
-        
-    }
-}
-
+@ccclass("GlobalEvent")
+export class GlobalEvent extends Component {}
